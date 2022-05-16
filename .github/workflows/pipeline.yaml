@@ -14,3 +14,16 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - run: echo "Build started "
+        
+        - name: Checkout repository
+          uses: actions/checkout@v3
+        - run: echo "Project repository has been clonde to runnner(ubuntu)"
+
+        #Create .env file
+      #Create application property file
+        -
+          name: Create application property file
+          uses: "finnp/create-file-action@master"
+          env:
+            FILE_NAME: ".env"
+            FILE_DATA: ${{ secrets.ENV_FILE }}
