@@ -5,8 +5,8 @@ let router = require("./routes");
 
 require("dotenv").config();
 
-const PORT = process.env.PORT
-const URI = process.env.URI
+const PORT = 5000
+const URI = "mongodb+srv://tharindu:tharindu@cluster0.vnll5.mongodb.net/ms-dilivery?retryWrites=true&w=majority"
 app.get("/", (req, res) => {
   res.send("Dilvery Home route");
 });
