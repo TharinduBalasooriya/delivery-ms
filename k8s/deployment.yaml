@@ -18,7 +18,7 @@ spec:
         app: deliveryms
     spec:
       containers:
-        - name:  deliveryms-app
+        - name: deliveryms-app
           image: tharindub/deliveryms:latest
           ports:
             - containerPort: 5000
