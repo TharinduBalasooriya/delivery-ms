@@ -1,0 +1,16 @@
+name: Build and deploy
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  DEPLOYMENT_NAME: deliveryms
+
+jobs:
+  setup-build-publish:
+      name: Setup-build-publish
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "Build started "
